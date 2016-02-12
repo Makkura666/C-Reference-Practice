@@ -3,7 +3,7 @@
  * Contributors:
  *  * Jens Ackou
  * Description:
- *
+ *  The console hello
  */
 
 #include "GameOver.h"

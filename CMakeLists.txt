@@ -20,3 +20,10 @@ add_definitions(-Wall)
 # └──────────────────────────────────────────────────────────────────┘
 file(GLOB_RECURSE source_files ${PROJECT_SOURCE_DIR}/src/*)
 add_executable(main ${source_files})
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  POST                                                │
+# └──────────────────────────────────────────────────────────────────┘
+add_custom_target(run
+    COMMAND open main && quit
+)

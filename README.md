@@ -11,5 +11,7 @@ Storage for all my executed tutorials, reference projects and experimental plain
 * Beginning C++ Through Game Programming, Third Edition(https://tfetimes.com/wp-content/uploads/2015/04/Beginning_Cpp_Through_Game_Programming.pdf)
 
 ## Tutorial projects
+*
 
 ## Experiments
+*
