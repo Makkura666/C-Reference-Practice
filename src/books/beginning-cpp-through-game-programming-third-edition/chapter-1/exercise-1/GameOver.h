@@ -3,7 +3,7 @@
  * Contributors:
  *  * Jens Ackou
  * Description:
- *
+ * The almighty hello world of the game dev world !
  */
 
 #ifndef GAMEOVER
