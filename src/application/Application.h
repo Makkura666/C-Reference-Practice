@@ -14,7 +14,9 @@ class Application
 public:
 
   Application();
-  virtual int run();
+  void        intro(const char *className,
+                    const char *classDescription) const;
+  virtual int run() const;
 };
 
 #endif /* ifndef APPLICATION */

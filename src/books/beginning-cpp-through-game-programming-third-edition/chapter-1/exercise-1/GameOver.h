@@ -3,7 +3,7 @@
  * Contributors:
  *  * Jens Ackou
  * Description:
- * The almighty hello world of the game dev world !
+ *  The almighty hello world of the game dev world !
  */
 
 #ifndef GAMEOVER
@@ -16,7 +16,7 @@ class GameOver : public Application
 public:
 
   GameOver();
-  virtual int run();
+  virtual int run() const;
 };
 
 #endif /* ifndef APPLICATION */

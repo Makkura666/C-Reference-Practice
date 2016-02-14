@@ -7,11 +7,21 @@
  */
 
 #include "Application.h"
+#include <iostream>
 
 Application::Application()
 {}
 
-int Application::run()
+void Application::intro(const char *className, const char *classDescription) const
+{
+  using namespace std;
+  cout << "/**" << endl;
+  cout << " * " << className << endl;
+  cout << " * " << classDescription << endl;
+  cout << " */" << endl << endl;
+}
+
+int Application::run() const
 {
   return 1;
 }

@@ -12,9 +12,11 @@
 GameOver::GameOver()
 {}
 
-int GameOver::run()
+int GameOver::run() const
 {
-  std::cout << "Game Over!" << std::endl;
+  Application::intro("GameOver",
+                     "The almighty hello world of the game dev world !");
+  std::cout << "[APPLICATION] Game Over!" << std::endl;
 
   return 0;
 }
