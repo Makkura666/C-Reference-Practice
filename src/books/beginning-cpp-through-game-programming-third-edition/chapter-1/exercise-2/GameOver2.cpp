@@ -32,7 +32,6 @@ int GameOver2::run() const
 
   example1();
   example2();
-  std::cout << "Game Over!" << std::endl;
 
   return 0;
 }

@@ -62,7 +62,8 @@ void pauseTerminal() {
 // Display all exercises to pick from
 // (I have no more flexible way of doing this at the moment)
 void menu()  {
-  const char *choice[] = { "GameOver", "2", "3", "4", "5", "6", 0 };
+  const char *choice[] =
+  { "GameOver", "GameOver2", "ExpensiveCalculator", "4", "5", "6", 0 };
 
   for (int i = 0; i > -1; i++) {
     if (choice[i] == 0) break;
@@ -86,12 +87,12 @@ void initApplication(int choice)
 
     case 2:
 
-      // app = new GameOver();
+      app = new GameOver2();
       break;
 
     case 3:
 
-      // app = new GameOver();
+      app = new ExpensiveCalculator();
       break;
 
     case 4:
