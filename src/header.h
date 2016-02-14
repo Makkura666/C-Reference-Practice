@@ -28,10 +28,11 @@ int validInput()
 
 // Print a friendly introduction
 void introduction() {
-  std::cout << "Welcome to my C++ Exercise and Reference collection !" <<
-    std::endl;
-  std::cout << "#####################################################" <<
-    std::endl << std::endl;
+  using namespace std;
+
+  cout << "/**";
+  cout << " * Welcome to my C++ Exercise and Reference collection !" << endl;
+  cout << " */" << endl << std::endl;
 }
 
 // Pick an option by entering an integer value
