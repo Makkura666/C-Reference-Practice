@@ -6,6 +6,7 @@
  * Some basic arithmetic operations
  */
 
+  16                  ( )       Function call
 #include "ExpensiveCalculator.h"
 #include <iostream>
 
