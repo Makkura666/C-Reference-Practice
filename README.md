@@ -3,6 +3,7 @@ Storage for all my executed tutorials, reference projects and experimental plain
 
 ## Usage
 Tested on OSX
+
 1. Clone repository
 ```
 https://github.com/ackoujens/Cpp-Reference-and-Practice.git
@@ -17,7 +18,7 @@ cmake ..
 ```
 
 ## Book excercises
-* Beginning C++ Through Game Programming, Third Edition(https://tfetimes.com/wp-content/uploads/2015/04/Beginning_Cpp_Through_Game_Programming.pdf)
+* [Beginning C++ Through Game Programming, Third Edition](https://tfetimes.com/wp-content/uploads/2015/04/Beginning_Cpp_Through_Game_Programming.pdf)
 
 ## Tutorial projects
 *
