@@ -63,8 +63,9 @@ void pauseTerminal() {
 // (I have no more flexible way of doing this at the moment)
 void menu()  {
   const char *choice[] =
-  { "GameOver", "GameOver2", "ExpensiveCalculator", "GameStats", "GameStats2",
-    0 };
+  { "GameOver",   "GameOver2",   "ExpensiveCalculator",   "GameStats",
+    "GameStats2",
+    "GameStats3", "LostFortune", 0 };
 
   for (int i = 0; i > -1; i++) {
     if (choice[i] == 0) break;
@@ -105,6 +106,16 @@ void initApplication(int choice)
     case 5:
 
       app = new GameStats2();
+      break;
+
+    case 6:
+
+      app = new GameStats3();
+      break;
+
+    case 7:
+
+      app = new LostFortune();
       break;
     }
   }
