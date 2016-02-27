@@ -6,8 +6,36 @@
  * Some basic arithmetic operations
  */
 
+#include "ExpensiveCalculator.h"
+#include <iostream>
+
+ExpensiveCalculator::ExpensiveCalculator()
+{}
+
+int ExpensiveCalculator::run() const
+{
+  Application::intro("ExpensiveCalculator", "Some basic arithmetic operations");
+  std::cout << "[APPLICATION] 7 + 3 = " << 7 + 3 << std::endl;
+  std::cout << "[APPLICATION] 7 - 3 = " << 7 - 3 << std::endl;
+  std::cout << "[APPLICATION] 7 * 3 = " << 7 * 3 << std::endl;
+
+  // The result must be an integer
+  std::cout << "[APPLICATION] 7 / 3 = " << 7 / 3 << std::endl;
+  // This result will be more accurate
+  std::cout << "[APPLICATION] 7.0 / 3.0 = " << 7.0 / 3.0 << std::endl;
+
+  // Returns the remainder of the division
+  std::cout << "[APPLICATION] 7 % 3 = " << 7 % 3 << std::endl;
+
+  std::cout << "[APPLICATION] 7 + 3 * 5 = " << 7 + 3 * 5 << std::endl;
+  std::cout << "[APPLICATION] (7 + 3) * 5 = " << (7 + 3) * 5 << std::endl;
+
+  return 0;
+}
+
 /*
   C++ Operator Precedence
+  -----------------------
   Precedence Level   Operator  Description
   17                  ::        Scope resolution
   16                  ->        Indirect member selection
@@ -61,30 +89,3 @@
    2                  ^=        Bitwise XOR and assign
    1                  ,         Comma operator
 */
-
-#include "ExpensiveCalculator.h"
-#include <iostream>
-
-ExpensiveCalculator::ExpensiveCalculator()
-{}
-
-int ExpensiveCalculator::run() const
-{
-  Application::intro("ExpensiveCalculator", "Some basic arithmetic operations");
-  std::cout << "[APPLICATION] 7 + 3 = " << 7 + 3 << std::endl;
-  std::cout << "[APPLICATION] 7 - 3 = " << 7 - 3 << std::endl;
-  std::cout << "[APPLICATION] 7 * 3 = " << 7 * 3 << std::endl;
-
-  // The result must be an integer
-  std::cout << "[APPLICATION] 7 / 3 = " << 7 / 3 << std::endl;
-  // This result will be more accurate
-  std::cout << "[APPLICATION] 7.0 / 3.0 = " << 7.0 / 3.0 << std::endl;
-
-  // Returns the remainder of the division
-  std::cout << "[APPLICATION] 7 % 3 = " << 7 % 3 << std::endl;
-
-  std::cout << "[APPLICATION] 7 + 3 * 5 = " << 7 + 3 * 5 << std::endl;
-  std::cout << "[APPLICATION] (7 + 3) * 5 = " << (7 + 3) * 5 << std::endl;
-
-  return 0;
-}
