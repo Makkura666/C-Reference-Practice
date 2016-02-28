@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+#include <vector>
 #include "books/beginning-cpp-through-game-programming-third-edition/include.h"
 
 bool loop = true;
@@ -62,14 +63,22 @@ void pauseTerminal() {
 // Display all exercises to pick from
 // (I have no more flexible way of doing this at the moment)
 void menu()  {
-  const char *choice[] =
-  { "GameOver",   "GameOver2",   "ExpensiveCalculator",   "GameStats",
-    "GameStats2",
-    "GameStats3", "LostFortune", 0 };
+  int chapter  = 1;
+  int exercise = 1;
 
-  for (int i = 0; i > -1; i++) {
-    if (choice[i] == 0) break;
-    std::cout << "[" << i + 1 << "] " << choice[i] << std::endl;
+  // std::vector < std::vector < char const * >> libVector
+  for (auto i1 = book1.begin(); i1 != book1.end(); ++i1)
+  {
+    std::cout << "Chapter " << chapter << std::endl;
+    std::cout << "----------" << std::endl;
+
+    for (auto i2 = i1->begin(); i2 != i1->end(); ++i2)
+    {
+      std::cout << "[" << exercise << "] " << *i2 << std::endl;
+      exercise++;
+    }
+    std::cout << std::endl;
+    chapter++;
   }
 }
 
@@ -116,6 +125,16 @@ void initApplication(int choice)
     case 7:
 
       app = new LostFortune();
+      break;
+
+    case 8:
+
+      app = new EndLostFortune();
+      break;
+
+    case 9:
+
+      app = new ScoreRater();
       break;
     }
   }

@@ -26,6 +26,7 @@ int GameStats3::run() const
   // enumerators begins at 0 and increases by 1
   enum difficulty { NOVICE, EASY, NORMAL, HARD, UNBEATABLE };
   difficulty myDifficulty = EASY;
+  std::cout <<  "[APPLICATION] myDifficulty(enum): " << myDifficulty << std::endl;
 
   enum shipCost { FIGHTER_COST = 25, BOMBER_COST, CRUISER_COST = 50 };
   shipCost myShipCost = BOMBER_COST;
