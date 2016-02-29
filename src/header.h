@@ -136,6 +136,11 @@ void initApplication(int choice)
 
       app = new ScoreRater();
       break;
+
+    case 10:
+
+      app = new ScoreRater2();
+      break;
     }
   }
 
