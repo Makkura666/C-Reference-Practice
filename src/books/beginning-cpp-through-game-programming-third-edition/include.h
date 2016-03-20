@@ -1,12 +1,12 @@
 // Beginning C++ Through Game Programming Third Edition
 std::vector < std::vector < char const * >> book1 = {
   // Chapter 1
-  { "GameOver",   "GameOver2",   "ExpensiveCalculator", "GameStats",
+  { "GameOver",   "GameOver2",   "ExpensiveCalculator",   "GameStats",
     "GameStats2",
     "GameStats3", "LostFortune", "EndLostFortune" },
 
   // Chapter 2
-  { "ScoreRater", "ScoreRater2" }
+  { "ScoreRater", "ScoreRater2", "ScoreRater3",           "MenuChooser" }
 };
 
 
@@ -23,3 +23,5 @@ std::vector < std::vector < char const * >> book1 = {
 // Chapter 2 - Truth, Branching, and the Game Loop: Guess My Number
 #include "chapter-2/exercise-1/ScoreRater.h"
 #include "chapter-2/exercise-2/ScoreRater2.h"
+#include "chapter-2/exercise-3/ScoreRater3.h"
+#include "chapter-2/exercise-4/MenuChooser.h"

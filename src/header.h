@@ -31,7 +31,7 @@ int validInput()
 void introduction() {
   using namespace std;
 
-  cout << "/**";
+  cout << "/**" << endl;
   cout << " * Welcome to my C++ Exercise and Reference collection !" << endl;
   cout << " */" << endl << std::endl;
 }
@@ -140,6 +140,16 @@ void initApplication(int choice)
     case 10:
 
       app = new ScoreRater2();
+      break;
+
+    case 11:
+
+      app = new ScoreRater3();
+      break;
+
+    case 12:
+
+      app = new MenuChooser();
       break;
     }
   }
