@@ -3,7 +3,7 @@
  * Contributors:
  *  * Jens Ackou
  * Description:
- * multidimentional arrays
+ * classic word jumble game
  */
 
 #include <iostream>
