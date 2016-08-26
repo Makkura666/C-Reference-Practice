@@ -6,6 +6,24 @@
  * demonstrates algorithms
  */
 
+ /*
+    Functions to take into account when researching vector performance
+    capacity() - returns the number of elements vector can hold before a program must reallocate more memory for it
+    reserve()  - gives you control when to reallocate more memory for our vector
+
+    Other STL Containers
+    deque    (double ended queue)                                            - sequential
+    list     (linear list)                                                   - sequential
+    map      (Collection of key/value pairs in which each key has one value) - associative
+    multimap (Same as above but can have more then one value)                - associative
+    multiset (collection of not unique elements)                             - associative
+    priority_queue                                                           - adaptor
+    queue                                                                    - adaptor
+    set      (collection of unique elements)                                 - associative
+    stack                                                                    - adaptor
+    vector   (dynamic array)                                                 - sequential
+ */
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
