@@ -22,7 +22,7 @@ int main() {
   return 0;
 }
 
-int asknumber(int high, int low) {
+int askNumber(int high, int low) {
   int num;
   do {
     cout << "Please enter a number: " << " (" << low << " - " << high << "): ";
