@@ -18,7 +18,7 @@ using namespace std;
 
 class Critter {
 // make following global functions friends of the Critter class
-friend void Peek(const Critter& a Critter);
+friend void Peek(const Critter& aCritter);
 friend ostream& operator<<(ostream& os, const Critter& aCritter);
 
 public:
@@ -39,7 +39,7 @@ int main() {
   Critter crit("Poochie");
 
   cout << "Calling Peek() to access crit's private data member, m_Name:" << endl;
-  peek(crit);
+  Peek(crit);
 
   cout << endl << "Sending crit object to cout with the << operator:" << endl;
   cout << crit;
