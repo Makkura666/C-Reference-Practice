@@ -17,9 +17,9 @@ string* ptrToElement(vector<string>* const pVec, int i);
 int main() {
 
   vector<string> inventory;
-  inventory.push_bash("sword");
-  inventory.push_bash("armor");
-  inventory.push_bash("shield");
+  inventory.push_back("sword");
+  inventory.push_back("armor");
+  inventory.push_back("shield");
 
   // displays string object that the returned pointer points to
   cout << "Sending the object pointed to by returned pointer:" << endl;

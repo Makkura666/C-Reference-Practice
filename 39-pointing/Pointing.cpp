@@ -12,7 +12,7 @@ using namespace std;
 
 int main() {
   // declare a pointer
-  int* pAPointer;
+  //int* pAPointer;
 
   // declare and initialize a pointer
   int* pScore = 0;

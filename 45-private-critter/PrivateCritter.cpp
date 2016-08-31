@@ -12,7 +12,7 @@ using namespace std;
 class Critter {
 public:    // begin public section
   Critter(int hunger = 0);    // constructor prototype
-  void Greet();
+  int GetHunger() const;
   void SetHunger(int hunger);
 
 private:  // begin private section
@@ -24,11 +24,11 @@ Critter::Critter(int hunger) {
   m_Hunger = hunger;
 }
 
-void Critter::Greet() {
-  cout << "Hi, I'm a critter. My hunger level is " << m_Hunger << "." << endl;
+int Critter::GetHunger() const {
+  return m_Hunger;
 }
 
-void SetHunger(int hunger) {
+void Critter::SetHunger(int hunger) {
   if (hunger < 0) {
     cout << "You can't set a critter's hunger to a negative number." << endl << endl;
   } else {

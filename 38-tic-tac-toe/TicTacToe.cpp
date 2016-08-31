@@ -16,7 +16,8 @@ using namespace std;
 const char X = 'X';
 const char O = 'O';
 const char EMPTY = ' ';
-const char TIE = 'T';
+// FIX Variable UNSUSED
+//const char TIE = 'T';
 const char NO_ONE = 'N';
 
 // function prototypes
@@ -37,7 +38,7 @@ int main() {
   const int NUM_SQUARES = 9;
   vector<char> board(NUM_SQUARES, EMPTY);
 
-  instructions();
+  instructions();			
   char human = humanPiece();
   char computer = opponent(human);
   char turn = X;
