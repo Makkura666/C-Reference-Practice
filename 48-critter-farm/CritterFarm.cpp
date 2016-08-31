@@ -6,6 +6,10 @@
  * object containment (aggregation)
  */
 
+ /*
+  Aggregation example: declare a data member that can hold another object (has-a relationship)
+ */
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -38,6 +42,7 @@ private:
   vector<Critter> m_Critters;
 };
 
+// Allocate memory for 3 spaces
 Farm::Farm(int spaces) {
   m_Critters.reserve(spaces);
 }
@@ -66,6 +71,6 @@ int main() {
 
   cout << endl << "Calling Roll..." << endl;
   myFarm.RollCall();
-  
+
   return 0;
 }
