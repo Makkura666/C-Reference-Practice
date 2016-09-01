@@ -15,11 +15,11 @@ public:
   virtual ~Enemy();
   void virtual Attack() const;    // made virtual to be overridden
 
-private:
+protected:
   int* m_pDamage;
 };
 
-Enemy::Enemy(int damage):
+Enemy::Enemy(int damage)
 {
   m_pDamage = new int(damage);
 }
@@ -31,7 +31,7 @@ Enemy::~Enemy() {
 }
 
 void Enemy::Attack() const {
-  cout << "Attack inflicts " << m_Damage << " damage points!" << endl;
+  cout << "Attack inflicts " << m_pDamage << " damage points!" << endl;
 }
 
 class Boss : public Enemy {

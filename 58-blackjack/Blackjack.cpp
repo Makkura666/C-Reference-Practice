@@ -22,7 +22,7 @@ public:
   // overloading << operator so can send Card object to standard output
   friend ostream& operator<<(ostream& os, const Card& aCard);
 
-  Card(rank r : ACE, suit s = SPADES, bool ifu = true);
+  Card(rank r = ACE, suit s = SPADES, bool ifu = true);
 
   // returns the value of a card. 1 - 11
   int GetValue() const;
@@ -47,7 +47,7 @@ int Card::GetValue() const {
   int value = 0;
   if (m_IsFaceUp) {
     // value is number showing on card
-    value = m_rank;
+    value = m_Rank;
     // value is 10 for face cards
     if (value > 10) {
       value = 10;
@@ -192,6 +192,10 @@ public:
   // announces that the player pushes
   void Push() const;
 };
+
+Player::Player(const string& name):
+    GenericPlayer(name)
+{}
 
 Player::~Player() {}
 
@@ -448,12 +452,18 @@ ostream& operator<<(ostream& os, const Card& aCard) {
 
 // overloads << operator so a GenericPlayer object can be sent to cout
 ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer) {
-  for (pCard = aGenericPlayer.m_Cards.begin(); pCard != aGenericPlayer.m_Cards.end(); ++pCard) {
-    os << *(*pCard) << "\t";
-  }
+  //generated endless recursion
+  //os << aGenericPlayer << ":\t";
 
-  if (aGenericPlayer.GetTotal() != 0) {
-    cout << "(" << aGenericPlayer.GetTotal() << ")";
+  vector<Card*>::const_iterator pCard;
+  if(!aGenericPlayer.m_Cards.empty()) {
+    for (pCard = aGenericPlayer.m_Cards.begin(); pCard != aGenericPlayer.m_Cards.end(); ++pCard) {
+      os << *(*pCard) << "\t";
+    }
+
+    if (aGenericPlayer.GetTotal() != 0) {
+      cout << "(" << aGenericPlayer.GetTotal() << ")";
+    }
   } else {
     os << "<empty>";
   }

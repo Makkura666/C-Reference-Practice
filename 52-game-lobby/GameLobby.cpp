@@ -19,16 +19,16 @@ public:
 
 private:
   string  m_Name;
-  Player* m_pNext(Player* next);    // Pointer to next player in the list
+  Player* m_pNext;    // Pointer to next player in the list
 };
 
-Player::Player(const string& name = ""):
+Player::Player(const string& name):
   m_Name(name),
   m_pNext(0)
 {}
 
 string Player::GetName() const {
-  return m_pName;
+  return m_Name;
 }
 
 Player* Player::GetNext() const {
